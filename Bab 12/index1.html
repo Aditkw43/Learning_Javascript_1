@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+
+    <script>
+        // if
+        var usia = 17;
+        var usia_minimal = 17;
+        if (usia >= usia_minimal) {
+            console.log("Anda sudah dewasa");
+        } else {
+            console.log("Anda belum dewasa");
+        }
+
+        // nested-if
+        var setir = "false";
+        if (usia >= usia_minimal) {
+            setir = true;
+            if (setir == true) {
+                console.log("Anda sudah bisa dapet SIM");
+            }
+        } else {
+            console.log("Anda belum boleh dapat SIM");
+        }
+
+        // Else-if
+        var nilai = 80;
+        if (nilai >= 70 && nilai < 80) {
+            console.log("Nilai Lumayan");
+        } else if (nilai >= 80 && nilai < 90) {
+            console.log("Nilai bagus");
+        } else if (nilai >= 90 && nilai < 100) {
+            console.log("Nilai hebat");
+        } else if (nilai == 100) {
+            console.log("Nilai Sempurna");
+        }
+
+        // Switch
+        var nilai = 75;
+        switch (nilai) {
+            case 70:
+                console.log("Nilai Lumayan");
+                break;
+            case 80:
+                console.log("Nilai Bagus");
+                break;
+            case 90:
+                console.log("Nilai Hebat");
+                break;
+            case 100:
+                console.log("Nilai Sempurna");
+                break;
+            default:
+                console.log("Nilai tidak diketahui");
+                break;
+        }
+
+        // For
+        var nilai;
+        for (let nilai = 1; nilai <= 3; nilai++) {
+            console.log("Perulangan For: ke-" + nilai);
+        }
+
+        // while
+        nilai = 1;
+        while (nilai <= 3) {
+            console.log("Perulangan While: Ke-" + nilai);
+            nilai++;
+        }
+
+        // do-while
+        nilai = 1;
+        do {
+            console.log("Perulangan do-while: ke-" + nilai);
+            nilai++;
+        } while (nilai <= 3);
+    </script>
+</head>
+
+<body>
+    <h1>Belajar Javascript</h1>
+    <p>Saya belajar Javascript bersama Jubilee</p>
+</body>
+
+</html>
